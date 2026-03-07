@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bansari Makwana | Portfolio
 
-## Getting Started
+A premium, interactive personal portfolio built with Next.js, featuring a modern glassmorphic design, smooth animations, and a seamless user experience.
 
-First, run the development server:
+![Portfolio Preview](https://github.com/MakwBansari/Portfolio/assets/preview.png) *(Note: Add your actual preview image link here)*
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Core**: [Next.js 15+](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Components**: [Shadcn UI](https://ui.shadcn.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Deployment**: [Vercel](https://vercel.com/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Dynamic Hero Section**: Interactive name display with gradient text and personalized greetings.
+- **Modern Navigation**: MacBook-style floating dock for intuitive section switching.
+- **About & Skills Grid**: A comprehensive view of technical expertise (Languages, DSA, DBMS, Web) with hover effects and scroll animations.
+- **Projects Showcase**: Dynamic project cards featuring a custom scrolling marquee.
+- **Academics Section**: Styled educational history with premium card layouts.
+- **Glassmorphic UI**: Consistent use of backdrop-blur and semi-transparent layers for a high-end feel.
+- **Responsive Design**: Optimized for everything from mobile screens to ultra-wide desktops.
+- **Fully Animated**: Scroll-triggered entry animations and smooth transitions powered by Framer Motion.
 
-## Learn More
+## 🛠️ Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Node.js 18+ 
+- npm / yarn / pnpm
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Installation
 
-## Deploy on Vercel
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/MakwBansari/Portfolio.git
+   cd Portfolio
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## 📬 Contact
+
+- **Email**: [bansarimakwana3007@gmail.com](mailto:bansarimakwana3007@gmail.com)
+- **GitHub**: [@MakwBansari](https://github.com/MakwBansari)
+- **LinkedIn**: [Bansi Makwana](https://www.linkedin.com/in/bansimakwana/)
+
+---
+Developed with ❤️ by **Bansari Makwana**
