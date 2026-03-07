@@ -53,7 +53,6 @@ export function Hero() {
                 </motion.div>
             </div>
 
-            {/* Subtext description */}
             <div className="container mx-auto px-4 mt-8 text-center">
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
@@ -64,12 +63,6 @@ export function Hero() {
                     Aspiring Developer | Crafting efficient, user-centric digital experiences while expanding my technical horizons.
                 </motion.p>
             </div>
-
-            <style jsx>{`
-                .italic-border {
-                    -webkit-text-stroke: 1px rgba(0,0,0,0.3);
-                }
-            `}</style>
         </section>
     );
 }
