@@ -12,7 +12,7 @@ const projects = [
         tags: ["FinTech", "Scheduling", "Banking"],
         image: "/stride_new.png",
         link: "https://gostride.online/",
-        github: "#",
+        github: "https://github.com/simitmodi/Stride",
     },
     {
         title: "Sexual Harassment Committee",
@@ -20,7 +20,7 @@ const projects = [
         tags: ["Anonymity", "Security", "Portal"],
         image: "/shc_new.png",
         link: "https://sexualharrasmentcomplaint.vercel.app/",
-        github: "#",
+        github: "https://github.com/Sexual-Harresment-Committee",
     },
 ];
 
@@ -71,7 +71,7 @@ export function ProjectsSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
-                            className="group relative h-[450px] rounded-[3rem] overflow-hidden bg-card dark:bg-white/[0.02] border border-border dark:border-white/10 backdrop-blur-3xl transition-colors"
+                            className="group relative h-[550px] rounded-[3rem] overflow-hidden bg-card dark:bg-white/[0.02] border border-border dark:border-white/10 backdrop-blur-3xl transition-colors"
                         >
                             <div className="absolute inset-0 p-8 flex flex-col justify-between">
                                 <div className="flex justify-between items-start">
@@ -90,10 +90,17 @@ export function ProjectsSection() {
                                 <div className="space-y-4">
                                     <h3 className="text-4xl font-black text-foreground dark:text-white uppercase italic tracking-tighter leading-none">{project.title}</h3>
                                     <p className="text-muted-foreground text-lg leading-tight line-clamp-2">{project.description}</p>
-                                    <div className="flex gap-4 pt-4">
-                                        <Button variant="ghost" className="rounded-full px-6 py-6 border border-border dark:border-white/10 hover:bg-sky-400 hover:text-white dark:hover:text-black transition-all duration-300 group/btn font-black uppercase text-xs tracking-widest">
-                                            Case Study <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
-                                        </Button>
+                                    <div className="flex flex-col gap-3 pt-4">
+                                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="w-full">
+                                            <Button className="w-full h-14 rounded-2xl bg-sky-400 hover:bg-sky-500 text-black font-black uppercase tracking-widest text-xs transition-all duration-300">
+                                                Live Site <ExternalLink className="ml-2 w-4 h-4" />
+                                            </Button>
+                                        </a>
+                                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="w-full">
+                                            <Button variant="ghost" className="w-full h-14 rounded-2xl border border-border dark:border-white/10 hover:bg-foreground/5 dark:hover:bg-white/5 font-black uppercase text-xs tracking-widest transition-all">
+                                                Source Code <Github className="ml-2 w-4 h-4" />
+                                            </Button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
