@@ -108,15 +108,18 @@ export function SkillsSection() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
-                        className="rounded-[2.5rem] bg-white/[0.02] backdrop-blur-3xl border border-white/10 p-10 flex flex-col justify-between group relative overflow-hidden"
+                        className="rounded-[2.5rem] bg-white/[0.02] backdrop-blur-3xl border border-white/10 p-10 flex flex-col justify-between group relative overflow-hidden cursor-default"
                     >
-                        <Database className="w-10 h-10 text-emerald-400 group-hover:rotate-12 transition-transform duration-500" />
-                        <div>
+                        <Database className="w-10 h-10 text-emerald-400 group-hover:scale-110 transition-transform duration-500" />
+                        <div className="relative z-10">
                             <h3 className="text-2xl font-black text-white uppercase italic mb-1">DBMS</h3>
-                            <p className="text-white/30 text-[10px] font-mono leading-none">High-performance data architecture</p>
+                            <p className="text-white/30 text-[10px] font-mono leading-none group-hover:opacity-0 transition-opacity">Database Management Systems</p>
                         </div>
-                        <div className="absolute -right-4 top-1/2 -translate-y-1/2 font-mono text-emerald-500/5 text-4xl font-black select-none group-hover:text-emerald-500/10 transition-colors">
-                            SQL
+                        {/* SQL Reveal */}
+                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                            <span className="text-5xl font-black text-emerald-500 opacity-0 group-hover:opacity-100 group-hover:scale-110 blur-lg group-hover:blur-0 transition-all duration-500 tracking-tighter italic">
+                                SQL
+                            </span>
                         </div>
                     </motion.div>
 
@@ -126,33 +129,25 @@ export function SkillsSection() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.3 }}
-                        className="rounded-[2.5rem] bg-white/[0.02] backdrop-blur-3xl border border-white/10 p-10 flex flex-col justify-between group relative overflow-hidden"
+                        className="md:col-span-1 rounded-[2.5rem] bg-white/[0.02] backdrop-blur-3xl border border-white/10 p-10 flex flex-col justify-between group relative overflow-hidden cursor-default"
                     >
                         <Globe className="w-10 h-10 text-orange-400 group-hover:animate-spin-slow transition-transform" />
-                        <div>
-                            <h3 className="text-2xl font-black text-white uppercase italic mb-1 text-right">Web</h3>
-                            <div className="flex gap-2 justify-end">
+                        <div className="relative z-10">
+                            <h3 className="text-2xl font-black text-white uppercase italic mb-1 group-hover:opacity-0 transition-opacity">Web</h3>
+                            <div className="flex gap-2 group-hover:opacity-0 transition-opacity">
                                 {["H", "C", "J"].map(l => (
-                                    <span key={l} className="text-white/20 font-black group-hover:text-orange-400 transition-colors">{l}</span>
+                                    <span key={l} className="text-white/20 font-black">{l}</span>
                                 ))}
                             </div>
                         </div>
-                    </motion.div>
-
-                    {/* Card 5: The "Philosophy" Card - Span 2x1 */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.4 }}
-                        className="md:col-span-2 rounded-[2.5rem] bg-gradient-to-br from-sky-500 to-blue-700 p-10 flex flex-col justify-center relative overflow-hidden group shadow-2xl shadow-sky-500/20"
-                    >
-                        <Code2 className="absolute top-10 right-10 w-32 h-32 text-white/10 -rotate-12 group-hover:rotate-0 transition-transform duration-700" />
-                        <h4 className="text-white/70 text-sm font-bold uppercase tracking-[0.2em] mb-4">Core Principle</h4>
-                        <p className="text-3xl font-black text-white uppercase italic leading-none tracking-tighter">
-                            Efficiency over redundancy.<br />
-                            Scalability over complexity.
-                        </p>
+                        {/* Reveal Animation */}
+                        <div className="absolute inset-0 flex flex-col items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
+                            <div className="space-y-1 text-center">
+                                <p className="text-lg font-black text-orange-400 italic">HTML</p>
+                                <p className="text-lg font-black text-orange-400 italic">CSS</p>
+                                <p className="text-lg font-black text-orange-400 italic">JavaScript</p>
+                            </div>
+                        </div>
                     </motion.div>
                 </div>
             </div>
