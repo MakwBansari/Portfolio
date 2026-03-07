@@ -25,9 +25,9 @@ export function AcademicsSection() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="text-5xl md:text-7xl font-black mb-8 tracking-tighter text-white uppercase italic"
+                        className="text-4xl md:text-6xl font-black mb-10 tracking-[ -0.05em] text-white uppercase italic leading-[0.85]"
                     >
-                        Academics
+                        My<br /><span className="text-transparent border-b-4 border-sky-500 pb-2 bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">Academics</span>
                     </motion.h2>
                 </div>
 

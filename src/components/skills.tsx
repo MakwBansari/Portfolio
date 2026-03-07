@@ -28,7 +28,7 @@ export function SkillsSection() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="text-6xl md:text-8xl font-black mb-10 tracking-[ -0.05em] text-white uppercase italic leading-[0.85]"
+                        className="text-4xl md:text-6xl font-black mb-10 tracking-[-0.05em] text-white uppercase italic leading-[0.85]"
                     >
                         About<br /><span className="text-transparent border-b-4 border-sky-500 pb-2 bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">Me</span>
                     </motion.h2>
@@ -39,12 +39,12 @@ export function SkillsSection() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="text-white/50 max-w-3xl text-xl md:text-2xl font-medium leading-relaxed"
                     >
-                        I am a results-driven developer focusing on building high-performance applications and mastering core engineering principles.
+                        Hello! I'm <span className="text-white">Bansari Makwana</span>, a passionate developer with a deep love for solving complex puzzles and building elegant digital solutions. My journey is fueled by an insatiable curiosity for how technology shapes our world. Beyond the code, I'm a persistent problem-solver who views every challenge as a masterclass in learning. I thrive on turning creative ideas into functional, user-centric realities.
                     </motion.p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[250px]">
-                    {/* Card 1: Languages (Main Focal) - Span 2x2 */}
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[200px]">
+                    {/* Card 1: Languages */}
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ export function SkillsSection() {
                             </div>
                             <h3 className="text-4xl font-black text-white uppercase italic mb-6 tracking-tighter">Languages</h3>
                             <div className="space-y-4">
-                                {["Python", "Java", "C Programming"].map((skill, i) => (
+                                {["Python", "Java", "C Programming"].map((skill) => (
                                     <div key={skill} className="flex items-center gap-4 group/item">
                                         <div className="w-1.5 h-1.5 rounded-full bg-sky-500 transition-all group-hover/item:h-6" />
                                         <span className="text-2xl font-bold text-white/40 group-hover/item:text-white transition-colors">{skill}</span>
@@ -65,16 +65,9 @@ export function SkillsSection() {
                                 ))}
                             </div>
                         </div>
-                        {/* Decorative Code Background */}
-                        <div className="absolute -bottom-10 -right-10 opacity-[0.03] rotate-12 group-hover:rotate-0 transition-transform duration-1000">
-                            <pre className="text-xs font-mono text-white select-none">
-                                {`def build_future():\n  while coding:\n    dream()\n    execute()\n    learn()`}
-                            </pre>
-                        </div>
-                        <div className="absolute top-0 right-0 w-64 h-64 bg-sky-500/5 blur-[100px] rounded-full group-hover:bg-sky-500/10 transition-all duration-700" />
                     </motion.div>
 
-                    {/* Card 2: DSA (Visual Card) - Span 2x1 */}
+                    {/* Card 2: DSA */}
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -89,7 +82,6 @@ export function SkillsSection() {
                             </div>
                             <p className="text-white/40 font-bold uppercase tracking-widest text-sm">Complexity Optimized</p>
                         </div>
-                        {/* Visual Node Graph Decorator */}
                         <div className="relative flex h-full items-center">
                             <div className="flex gap-2">
                                 {[1, 2, 3].map(i => (
@@ -99,10 +91,9 @@ export function SkillsSection() {
                                 ))}
                             </div>
                         </div>
-                        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                     </motion.div>
 
-                    {/* Card 3: DBMS (Tech Focus) - Span 1x1 */}
+                    {/* Card 3: DBMS */}
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -113,17 +104,11 @@ export function SkillsSection() {
                         <Database className="w-10 h-10 text-emerald-400 group-hover:scale-110 transition-transform duration-500" />
                         <div className="relative z-10">
                             <h3 className="text-2xl font-black text-white uppercase italic mb-1">DBMS</h3>
-                            <p className="text-white/30 text-[10px] font-mono leading-none group-hover:opacity-0 transition-opacity">Database Management Systems</p>
-                        </div>
-                        {/* SQL Reveal */}
-                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                            <span className="text-5xl font-black text-emerald-500 opacity-0 group-hover:opacity-100 group-hover:scale-110 blur-lg group-hover:blur-0 transition-all duration-500 tracking-tighter italic">
-                                SQL
-                            </span>
+                            <p className="text-white/30 text-[10px] font-mono leading-none">Database Systems</p>
                         </div>
                     </motion.div>
 
-                    {/* Card 4: Web Development (Wide Minimal) - Span 1x1 */}
+                    {/* Card 4: Web */}
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -133,19 +118,11 @@ export function SkillsSection() {
                     >
                         <Globe className="w-10 h-10 text-orange-400 group-hover:animate-spin-slow transition-transform" />
                         <div className="relative z-10">
-                            <h3 className="text-2xl font-black text-white uppercase italic mb-1 group-hover:opacity-0 transition-opacity">Web</h3>
-                            <div className="flex gap-2 group-hover:opacity-0 transition-opacity">
+                            <h3 className="text-2xl font-black text-white uppercase italic mb-1">Web</h3>
+                            <div className="flex gap-2">
                                 {["H", "C", "J"].map(l => (
                                     <span key={l} className="text-white/20 font-black">{l}</span>
                                 ))}
-                            </div>
-                        </div>
-                        {/* Reveal Animation */}
-                        <div className="absolute inset-0 flex flex-col items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
-                            <div className="space-y-1 text-center">
-                                <p className="text-lg font-black text-orange-400 italic">HTML</p>
-                                <p className="text-lg font-black text-orange-400 italic">CSS</p>
-                                <p className="text-lg font-black text-orange-400 italic">JavaScript</p>
                             </div>
                         </div>
                     </motion.div>

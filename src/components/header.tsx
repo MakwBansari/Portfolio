@@ -17,7 +17,7 @@ export function Header() {
     return (
         <header className="fixed top-0 left-0 right-0 z-40 p-6 flex justify-between items-start pointer-events-none">
             <div className="pointer-events-auto">
-                <Link href="/" className="text-xl font-bold tracking-tighter text-gradient leading-none whitespace-nowrap">
+                <Link href="/" className="text-xl font-bold tracking-tighter text-sky-400 leading-none whitespace-nowrap">
                     Bansari Makwana
                 </Link>
             </div>

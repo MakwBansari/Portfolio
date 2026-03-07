@@ -36,7 +36,7 @@ export function Hero() {
             </div>
 
             {/* Scrolling Marquee */}
-            <div className="w-full bg-primary py-4 overflow-hidden border-y border-white/10 group mt-12 mb-8">
+            <div className="w-full bg-sky-400 py-2 overflow-hidden border-y border-white/10 group mt-12 mb-8">
                 <motion.div
                     className="flex whitespace-nowrap gap-12"
                     variants={marqueeVariant}
