@@ -60,5 +60,11 @@ A premium, interactive personal portfolio built with Next.js, featuring a modern
 - **GitHub**: [@MakwBansari](https://github.com/MakwBansari)
 - **LinkedIn**: [Bansi Makwana](https://www.linkedin.com/in/bansimakwana/)
 
+## 📜 License & Visualization
+
+Conceptualized, Visualized, and Crafted with precision. This portfolio is more than just code; it's a digital canvas where architecture meets artistry.
+
+Licensed under the **MIT License**. Feel free to explore, fork, and draw inspiration, but remember that every pixel carries a piece of the journey.
+
 ---
-Developed with ❤️ by **Bansari Makwana**
+**Visualized & Engineered with ❤️ by Bansari Makwana**
