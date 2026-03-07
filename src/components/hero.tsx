@@ -20,11 +20,11 @@ export function Hero() {
                         </span>
                     </motion.div>
 
-                    <div className="mb-6">
+                    <div className="mb-6 overflow-visible">
                         <motion.h1
                             initial="hidden"
                             animate="visible"
-                            className="text-4xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-tight whitespace-nowrap"
+                            className="text-[clamp(2.5rem,10vw,8rem)] font-black tracking-tighter leading-none whitespace-nowrap inline-block"
                         >
                             {"Bansari Makwana".split("").map((char, index) => (
                                 <motion.span
@@ -39,7 +39,7 @@ export function Hero() {
                                         type: "spring",
                                         stiffness: 150
                                     }}
-                                    className={char === " " ? "inline-block w-4" : "inline-block"}
+                                    className={char === " " ? "inline-block w-[0.2em]" : "inline-block text-gradient"}
                                 >
                                     {char}
                                 </motion.span>
