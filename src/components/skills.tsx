@@ -9,13 +9,13 @@ export function SkillsSection() {
         {
             title: "Languages",
             icon: <Terminal className="w-6 h-6 text-sky-400" />,
-            skills: ["Java", "Python"],
+            skills: ["Java", "Python", "C Programming"],
             variant: "list",
         },
         {
             title: "Web Development",
             icon: <Globe className="w-6 h-6 text-orange-400" />,
-            skills: ["Web Development"],
+            skills: ["HTML", "CSS", "JavaScript"],
             variant: "cloud",
         },
         {
