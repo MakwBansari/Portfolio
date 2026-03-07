@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Link from "next/link";
-import { Home, FolderCode, Cpu, Mail, Github, Linkedin, Moon, Sun } from "lucide-react";
+import { Home, FolderCode, Cpu, Mail, Github, Linkedin, Moon, Sun, GraduationCap } from "lucide-react";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 
@@ -11,6 +11,7 @@ const items = [
     { name: "Home", icon: Home, href: "#" },
     { name: "Projects", icon: FolderCode, href: "#projects" },
     { name: "About Me", icon: Cpu, href: "#about" },
+    { name: "Academics", icon: GraduationCap, href: "#academics" },
     { name: "Contact", icon: Mail, href: "#contact" },
 ];
 
