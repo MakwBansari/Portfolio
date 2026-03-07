@@ -98,7 +98,7 @@ export function SkillsSection() {
                             className="p-8 rounded-[2.5rem] bg-card dark:bg-white/[0.02] border border-border dark:border-white/10 backdrop-blur-xl hover:border-sky-400/50 transition-all duration-500 group/card flex flex-col"
                         >
                             <div className="mb-6 w-12 h-12 rounded-2xl bg-sky-400/10 dark:bg-sky-500/10 border border-sky-400/20 dark:border-sky-500/20 flex items-center justify-center text-sky-400 group-hover/card:scale-110 group-hover/card:rotate-6 transition-all duration-500">
-                                {group.title === "Web Dev" ? (
+                                {group.title === "Web Development" ? (
                                     <Globe className="w-6 h-6 text-orange-400 group-hover/card:animate-spin-slow" />
                                 ) : group.icon}
                             </div>
