@@ -9,26 +9,26 @@ export function SkillsSection() {
         {
             title: "Languages",
             icon: <Terminal className="w-6 h-6 text-sky-400" />,
-            skills: ["Python", "Java", "C Programming"],
+            skills: ["Java", "Python"],
             variant: "list",
         },
         {
-            title: "Web Dev",
+            title: "Web Development",
             icon: <Globe className="w-6 h-6 text-orange-400" />,
-            skills: ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS"],
+            skills: ["Web Development"],
             variant: "cloud",
         },
         {
-            title: "Databases",
-            icon: <Database className="w-6 h-6 text-emerald-400" />,
-            skills: ["SQL", "MongoDB", "PostgreSQL"],
-            variant: "cloud",
-        },
-        {
-            title: "Concepts",
+            title: "Data & Systems",
             icon: <Brain className="w-6 h-6 text-purple-400" />,
-            skills: ["DSA", "OOP", "DBMS", "OS", "CN"],
+            skills: ["DSA", "Analytics"],
             variant: "concepts",
+        },
+        {
+            title: "Tools",
+            icon: <Database className="w-6 h-6 text-emerald-400" />,
+            skills: ["Tech Tools"],
+            variant: "cloud",
         },
     ];
 
