@@ -12,23 +12,23 @@ export function Hero() {
             transition: {
                 x: {
                     repeat: Infinity,
-                    repeatType: "loop",
+                    repeatType: "loop" as const,
                     duration: 20,
-                    ease: "linear",
+                    ease: "linear" as const,
                 },
             },
         },
     };
 
     return (
-        <section className="relative min-h-screen flex flex-col justify-center bg-black overflow-hidden pt-20">
+        <section className="relative min-h-[100dvh] flex flex-col justify-center bg-black overflow-hidden pt-20 pb-32">
             {/* Ultra-bold Name Header */}
             <div className="w-full flex justify-center items-center px-4 overflow-hidden">
                 <motion.h1
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1, ease: "easeOut" }}
-                    className="text-[clamp(4rem,20vw,24rem)] font-black tracking-tighter leading-none text-white uppercase select-none text-center"
+                    className="text-[clamp(3rem,15vw,12rem)] font-black tracking-tighter leading-none text-white uppercase select-none text-center"
                     style={{ fontFamily: 'Inter, sans-serif', fontWeight: 900 }}
                 >
                     Bansari<br />Makwana
@@ -36,7 +36,7 @@ export function Hero() {
             </div>
 
             {/* Scrolling Marquee */}
-            <div className="absolute bottom-1/4 w-full bg-primary py-4 overflow-hidden border-y border-white/10 group">
+            <div className="w-full bg-primary py-4 overflow-hidden border-y border-white/10 group mt-12 mb-8">
                 <motion.div
                     className="flex whitespace-nowrap gap-12"
                     variants={marqueeVariant}
@@ -54,7 +54,7 @@ export function Hero() {
             </div>
 
             {/* Subtext description */}
-            <div className="container mx-auto px-4 mt-32 text-center">
+            <div className="container mx-auto px-4 mt-8 text-center">
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
