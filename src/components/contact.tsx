@@ -2,103 +2,91 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { Mail, Github, Linkedin, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Send, Mail, Github, Linkedin } from "lucide-react";
 
 export function ContactSection() {
     return (
-        <section id="contact" className="py-24 bg-primary/5">
-            <div className="container mx-auto px-4">
-                <div className="flex flex-col items-center mb-16 text-center">
-                    <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
-                        className="text-4xl md:text-6xl font-black mb-10 tracking-[ -0.05em] text-white uppercase italic leading-[0.85]"
-                    >
-                        Contact<br /><span className="text-transparent border-b-4 border-sky-500 pb-2 bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">Me</span>
-                    </motion.h2>
-                    <p className="text-muted-foreground max-w-xl">
-                        Have a project in mind or just want to say hi? I&apos;m always open to new opportunities and interesting conversations.
-                    </p>
-                </div>
-
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-                    {/* Info Side */}
-                    <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5 }}
-                        className="flex flex-col justify-center space-y-8"
-                    >
-                        <div>
-                            <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
-                            <div className="space-y-6">
-                                <div className="flex items-center gap-4">
-                                    <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
-                                        <Mail className="h-6 w-6" />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-muted-foreground">Email</p>
-                                        <a href="mailto:bansarimakwana3007@gmail.com" className="font-medium hover:text-sky-400 transition-colors">bansarimakwana3007@gmail.com</a>
-                                    </div>
-                                </div>
-                                <div className="flex items-center gap-4">
-                                    <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
-                                        <Github className="h-6 w-6" />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-muted-foreground">GitHub</p>
-                                        <a href="https://github.com/MakwBansari" target="_blank" rel="noopener noreferrer" className="font-medium hover:text-sky-400 transition-colors">MakwBansari</a>
-                                    </div>
-                                </div>
-                                <div className="flex items-center gap-4">
-                                    <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
-                                        <Linkedin className="h-6 w-6" />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-muted-foreground">LinkedIn</p>
-                                        <a href="https://www.linkedin.com/in/bansimakwana/" target="_blank" rel="noopener noreferrer" className="font-medium hover:text-sky-400 transition-colors">Bansi Makwana</a>
-                                    </div>
-                                </div>
-                            </div>
+        <section id="contact" className="py-32 bg-background relative overflow-hidden transition-colors duration-500">
+            <div className="container mx-auto px-4 relative z-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    {/* Left: Content */}
+                    <div className="space-y-12">
+                        <div className="space-y-6">
+                            <motion.div
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                className="inline-block px-4 py-1.5 rounded-full bg-foreground/5 dark:bg-white/5 border border-foreground/10 dark:border-white/10 text-[10px] font-black uppercase tracking-[0.3em] text-sky-400"
+                            >
+                                Get in Touch
+                            </motion.div>
+                            <motion.h2
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                className="text-5xl md:text-7xl font-black tracking-[-0.05em] text-foreground dark:text-white uppercase italic leading-[0.85]"
+                            >
+                                Let's Build<br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">Together</span>
+                            </motion.h2>
+                            <p className="text-muted-foreground text-xl max-w-md font-medium leading-relaxed">
+                                I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+                            </p>
                         </div>
-                    </motion.div>
 
-                    {/* Form Side */}
+                        <div className="space-y-6">
+                            {[
+                                { icon: <Mail className="w-6 h-6" />, label: "Email", value: "bansarimakwana3007@gmail.com", link: "mailto:bansarimakwana3007@gmail.com" },
+                                { icon: <Github className="w-6 h-6" />, label: "GitHub", value: "@MakwBansari", link: "https://github.com/MakwBansari" },
+                                { icon: <Linkedin className="w-6 h-6" />, label: "LinkedIn", value: "Bansi Makwana", link: "https://www.linkedin.com/in/bansimakwana/" },
+                            ].map((item, i) => (
+                                <motion.a
+                                    key={i}
+                                    href={item.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    initial={{ opacity: 0, x: -20 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: i * 0.1 }}
+                                    className="flex items-center gap-6 group p-4 -ml-4 rounded-3xl hover:bg-foreground/5 dark:hover:bg-white/5 transition-all duration-300"
+                                >
+                                    <div className="w-14 h-14 rounded-2xl bg-sky-400/10 dark:bg-sky-500/10 border border-sky-400/20 dark:border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:scale-110 transition-transform">
+                                        {item.icon}
+                                    </div>
+                                    <div>
+                                        <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground mb-1">{item.label}</p>
+                                        <p className="text-lg font-bold text-foreground dark:text-white group-hover:text-sky-400 transition-colors">{item.value}</p>
+                                    </div>
+                                </motion.a>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Right: Form */}
                     <motion.div
-                        initial={{ opacity: 0, x: 20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.5 }}
-                        className="glass-card p-8 rounded-3xl"
+                        className="p-10 rounded-[3rem] bg-card dark:bg-white/[0.02] border border-border dark:border-white/10 backdrop-blur-3xl relative"
                     >
-                        <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                <div className="space-y-2">
-                                    <label className="text-sm font-medium ml-1">Name</label>
-                                    <Input placeholder="John Doe" className="rounded-xl glass border-primary/10 transition-all focus:border-primary/30" />
-                                </div>
-                                <div className="space-y-2">
-                                    <label className="text-sm font-medium ml-1">Email</label>
-                                    <Input placeholder="john@example.com" type="email" className="rounded-xl glass border-primary/10 transition-all focus:border-primary/30" />
-                                </div>
+                        <form className="space-y-6 relative z-10">
+                            <div className="space-y-2">
+                                <label className="text-[10px] font-black uppercase tracking-widest ml-4 text-muted-foreground">Full Name</label>
+                                <Input className="h-16 rounded-2xl bg-foreground/5 dark:bg-white/5 border-foreground/10 dark:border-white/10 px-6 font-medium focus:border-sky-400 transition-all text-foreground dark:text-white" placeholder="John Doe" />
                             </div>
                             <div className="space-y-2">
-                                <label className="text-sm font-medium ml-1">Subject</label>
-                                <Input placeholder="Project Inquiry" className="rounded-xl glass border-primary/10 transition-all focus:border-primary/30" />
+                                <label className="text-[10px] font-black uppercase tracking-widest ml-4 text-muted-foreground">Email Address</label>
+                                <Input className="h-16 rounded-2xl bg-foreground/5 dark:bg-white/5 border-foreground/10 dark:border-white/10 px-6 font-medium focus:border-sky-400 transition-all text-foreground dark:text-white" placeholder="john@example.com" />
                             </div>
                             <div className="space-y-2">
-                                <label className="text-sm font-medium ml-1">Message</label>
-                                <Textarea placeholder="Tell me about your project..." className="min-h-[150px] rounded-xl glass border-primary/10 transition-all focus:border-primary/30" />
+                                <label className="text-[10px] font-black uppercase tracking-widest ml-4 text-muted-foreground">Your Message</label>
+                                <Textarea className="min-h-[150px] rounded-3xl bg-foreground/5 dark:bg-white/5 border-foreground/10 dark:border-white/10 p-6 font-medium focus:border-sky-400 transition-all text-foreground dark:text-white" placeholder="Tell me about your project..." />
                             </div>
-                            <Button className="w-full rounded-xl py-6 text-base font-semibold group">
+                            <Button className="w-full h-16 rounded-2xl bg-sky-400 hover:bg-sky-500 text-black font-black uppercase tracking-widest text-xs transition-all duration-300">
                                 Send Message
-                                <Send className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                             </Button>
                         </form>
                     </motion.div>

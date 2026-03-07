@@ -4,7 +4,8 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-import { Sun } from "lucide-react";
+import { ModeToggle } from "./mode-toggle";
+import { ThemeProvider } from "./theme-provider";
 
 export function Header() {
     const [time, setTime] = useState(new Date());
@@ -15,13 +16,15 @@ export function Header() {
     }, []);
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-40 p-6 flex justify-between items-start pointer-events-none">
+        <header className="fixed top-0 left-0 right-0 z-40 p-6 flex justify-between items-center pointer-events-none">
             <div className="pointer-events-auto">
                 <Link href="/" className="text-xl font-bold tracking-tighter text-sky-400 leading-none whitespace-nowrap">
                     Bansari Makwana
                 </Link>
             </div>
-
+            <div className="pointer-events-auto">
+                <ModeToggle />
+            </div>
         </header>
     );
 }
