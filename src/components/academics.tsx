@@ -46,7 +46,7 @@ export function AcademicsSection() {
 
                         <div className="relative z-10 space-y-12">
                             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-                                <div className="space-y-4">
+                                <div className="space-y-4 flex-1">
                                     <div className="w-16 h-16 rounded-2xl bg-sky-400/10 dark:bg-sky-500/10 border border-sky-400/20 dark:border-sky-500/20 flex items-center justify-center group-hover:rotate-6 transition-transform">
                                         <GraduationCap className="w-8 h-8 text-sky-400" />
                                     </div>
@@ -54,12 +54,12 @@ export function AcademicsSection() {
                                         <h3 className="text-4xl md:text-5xl font-black text-foreground dark:text-white uppercase italic tracking-tighter shadow-sky-500/5">Computer Engineering</h3>
                                         <p className="text-sky-400 font-bold tracking-widest uppercase flex items-center gap-2 mt-2">
                                             <span className="w-2 h-2 rounded-full bg-sky-400 animate-pulse" />
-                                            GTU Ahmedabad (LDRP)
+                                            Sal Institute for Technology and Engineering Research
                                         </p>
                                     </div>
                                 </div>
-                                <div className="px-6 py-3 rounded-2xl bg-foreground/5 dark:bg-white/5 border border-foreground/10 dark:border-white/10">
-                                    <span className="text-2xl font-black text-foreground dark:text-white italic">2023 — 2027</span>
+                                <div className="flex-shrink-0 px-6 py-3 rounded-2xl bg-foreground/5 dark:bg-white/5 border border-foreground/10 dark:border-white/10">
+                                    <span className="text-2xl font-black text-foreground dark:text-white italic whitespace-nowrap">2023 — 2027</span>
                                 </div>
                             </div>
 
@@ -86,11 +86,6 @@ export function AcademicsSection() {
                                     <p className="text-xl font-bold text-foreground dark:text-white">Full Stack Dev</p>
                                 </div>
                             </div>
-                        </div>
-
-                        {/* Background Decoration */}
-                        <div className="absolute top-0 right-0 p-8 text-foreground/[0.03] dark:text-white/5 font-black text-9xl leading-none select-none pointer-events-none italic uppercase">
-                            SAL
                         </div>
                     </motion.div>
                 </div>
