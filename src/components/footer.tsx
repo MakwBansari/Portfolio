@@ -14,7 +14,7 @@ export function Footer() {
                     className="flex whitespace-nowrap gap-20"
                 >
                     {[...Array(6)].map((_, i) => (
-                        <span key={i} className="text-black font-black uppercase italic tracking-tighter text-2xl px-4 flex items-center gap-4">
+                        <span key={i} className="text-black font-black uppercase italic tracking-tighter text-4xl md:text-5xl px-4 flex items-center gap-4">
                             Thanks for visiting • Keep Building • Open for Collaborations • Let's Connect •
                         </span>
                     ))}
